@@ -13,9 +13,18 @@ export default class App extends Component {
   }
 }
 /* I need my rainbow to circle back to original color */
-disco = () => {
+/* definetly need a loop... le sigh */
+/* need to iterate through every color in colors */
+
+colorCycle = () => {
   let colors=['blue','green','yellow','red','orange','yellow','lime','aqua','blue', 'purple'];
 }
+this.setState ({  /* starting changes */
+clickCount: this.state.clickCount;
+})
+
+
+
 render () {
   return (
     <div className="App">
