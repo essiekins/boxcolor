@@ -23,9 +23,7 @@ colorCycle = () => {
   let switcher= Math.floor(Math.random()*10)
   
 this.setState ({  /* starting changes */
-clickCount: this.state.clickCount,
-
-
+clickCount: this.state.clickCount++,
 
 })
 } /*end of colorCycle */
@@ -36,12 +34,13 @@ render () {
   return (
     <div className="App">
       <div className="title"> (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ Hello Disco Boxes ✧ﾟ･:*. </div>
+     <div className="boxHolders">
       <div className="toggleBox">
-      
+      I like being clicked
       </div>
       <div className="whatsInDaBox">
-     
-
+       I like random colors
+       </div> {/*end of box holder */}
       </div>
      
     </div>

@@ -3,6 +3,7 @@
   background-color:rgb(255, 242, 242);
   height:100%;
   width:100%;
+  
 }
 .title {
   background-color:rgb(197, 168, 168);
@@ -13,11 +14,17 @@
   font-size:40px;
   color:white;
 }
-
+.boxHolders{
+  display:flex;
+  justify-content: space-evenly;
+  padding-top:300px;
+  text-align:center;
+}
 .toggleBox,
 .whatsInDaBox{
   border:1px solid black;
   height:200px;
   width:200px;
+  text-align: center;
 
 }
