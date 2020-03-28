@@ -9,16 +9,16 @@ export default class App extends Component {
   /* also need a clicker counter, also update my state as many time as it clicks */
   this.state= {
     color:'pink',
-    clickCount= 0, 
+    clickCount: 0, 
   }
 }
+render () {
   return (
     <div className="App">
-      <h1> Hello Disco Boxes ^u^</h1>
+      <h1> (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ Hello Disco Boxes ✧ﾟ･:*.</h1>
      
     </div>
   );
 }
 
-
-export default App;
+}
