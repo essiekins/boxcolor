@@ -4,8 +4,12 @@
   height:100%;
   width:100%;
 }
-h1 {
+.title {
   background-color:rgb(197, 168, 168);
   text-align: center;
   margin-top:80px;
+  height:80px;
+  padding-top: 30px;
+  font-size:40px;
+  color:white;
 }

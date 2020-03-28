@@ -15,7 +15,13 @@ export default class App extends Component {
 render () {
   return (
     <div className="App">
-      <h1> (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ Hello Disco Boxes ✧ﾟ･:*.</h1>
+      <div className="title"> (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ Hello Disco Boxes ✧ﾟ･:*. </div>
+      <div className="leftBox">
+       
+      </div>
+      <div className="rightBox">
+
+      </div>
      
     </div>
   );
