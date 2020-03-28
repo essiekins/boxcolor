@@ -8,18 +8,23 @@ export default class App extends Component {
   /* need a starting state with a starting color */
   /* also need a clicker counter, also update my state as many time as it clicks */
   this.state= {
-    color:'pink',
+    color:'purple',
     clickCount: 0, 
   }
+}
+/* I need my rainbow to circle back to original color */
+disco = () => {
+  let colors=['blue','green','yellow','red','orange','yellow','lime','aqua','blue', 'purple'];
 }
 render () {
   return (
     <div className="App">
       <div className="title"> (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ Hello Disco Boxes ✧ﾟ･:*. </div>
-      <div className="leftBox">
-       
+      <div className="beforeBox">
+      
       </div>
-      <div className="rightBox">
+      <div className="afterBox">
+     
 
       </div>
      
