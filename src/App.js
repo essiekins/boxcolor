@@ -15,17 +15,22 @@ export default class App extends Component {
   }
 }
 /* I need my rainbow to circle back to original color */
-/* definetly need a loop... le sigh */
-/* need to iterate through every color in colors */
-
 colorCycle = () => {
   let colors=['blue','green','yellow','red','orange','yellow','lime','aqua','blue', 'purple'];
-  let switcher= Math.floor(Math.random()*10)
+  let i= Math.floor(Math.random()*10)
+  
   
 this.setState ({  /* starting changes */
-clickCount: this.state.clickCount++,
-
+clickCount: this.state.clickCount + 1,
+//i need switcher to pick any index
+color: this.state.color,
+//colors[i],
 })
+// console.log(colors[i]);
+
+document.getElementsByClassName('toggleBox')[0].style.backgroundColor = colors[i];
+
+
 } /*end of colorCycle */
 
 
@@ -35,14 +40,14 @@ render () {
     <div className="App">
       <div className="title"> (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ Hello Disco Boxes ✧ﾟ･:*. </div>
      <div className="boxHolders">
-      <div className="toggleBox">
-      I like being clicked
-      </div>
-      <div className="whatsInDaBox">
-       I like random colors
+      <div className="toggleBox" onClick={this.colorCycle}>
+       like being clicked
+       
+      
+      
        </div> {/*end of box holder */}
       </div>
-     
+      
     </div>
   );
 }
