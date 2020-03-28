@@ -32,7 +32,7 @@ color: this.state.color,
 document.getElementsByClassName('toggleBox')[0].style.backgroundColor = colors[i];
 
 //clicker count
-document.getElementsByClassName('toggleBox').text.clickCount = clickCount;
+// document.getElementsByClassName('toggleBox').text.clickCount = clickCount;
 
 } /*end of colorCycle */
 
@@ -42,10 +42,10 @@ render () {
       <div className="title"> (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ Hello Disco Boxes ✧ﾟ･:*. </div>
       <h1>Click this little box to see him rave!</h1>
      <div className="boxHolders"> 
-      <div className="timesClicked" onClick={this.clickCount}>
+      {/* <div className="timesClicked" onClick={this.clickCount}>
         I've been clicked this many times:
         <p>{clickCount}</p>
-      </div>
+      </div> */}
        
       <div className="toggleBox" onClick={this.colorCycle}>
       〜(^∇^〜）<br></br>♩ ♪ ♫ ♬ <br></br>（〜^∇^)〜
